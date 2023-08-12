@@ -1,0 +1,11 @@
+Sub Macro()'
+' Macro Macro'
+'Application.ScreenUpdating = False
+While counter < 8000
+If ActiveCell.Value <> Empty ThenActiveCell.AddComment
+ActiveCell.Comment.Visible = FalseActiveCell.Comment.Shape.Height = 400
+ActiveCell.Comment.Shape.Width = 440
+ActiveCell.Comment.Text Text:=ActiveCell.ValueEnd If
+ActiveCell.Offset(1, 0).Activatecounter = counter + 1
+Wend'
+End Sub
